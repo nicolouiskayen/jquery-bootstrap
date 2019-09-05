@@ -15,12 +15,12 @@ $(document).ready(function() {
         crystal2 = Math.floor(Math.random() * 9) + 1;
         crystal3 = Math.floor(Math.random() * 9) + 1;
         crystal4 = Math.floor(Math.random() * 9) + 1;
-        $("#goal").text(goal);
-        $("#total").text(total);
+        $("#goal").text("Goal: " + goal);
+        $("#total").text("Total: " + total);
     }
     $("#crystal-1").on("click", function(){
         total += crystal1
-        $("#total").text(total)
+        $("#total").text("Total: " + total)
         if (total === goal) {
             wins += 1;
             reset();
@@ -34,7 +34,7 @@ $(document).ready(function() {
     })
     $("#crystal-2").on("click", function(){
         total += crystal2
-        $("#total").text(total)
+        $("#total").text("Total: " + total)
         if (total === goal) {
             wins += 1;
             reset();
@@ -48,7 +48,7 @@ $(document).ready(function() {
     })
     $("#crystal-3").on("click", function(){
         total += crystal3
-        $("#total").text(total)
+        $("#total").text("Total: " + total)
         if (total === goal) {
             wins += 1;
             reset();
@@ -62,7 +62,7 @@ $(document).ready(function() {
     })
     $("#crystal-4").on("click", function(){
         total += crystal4
-        $("#total").text(total)
+        $("#total").text("Total: " + total)
         if (total === goal) {
             wins += 1;
             reset();
