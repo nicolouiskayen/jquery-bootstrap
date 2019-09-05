@@ -6,12 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <div class="jumbotron">
+        <h1 class="text-center">Crystal Game</h1>
+        <h3 class="text-left">Each crystal is assigned a random value between 1 and 10. Use the crystals to add up to the given value without exceeding it.</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 id="Goal"></h2>
+            </div>
+            <div class="col-lg-3">
+                <h2 class="wins">Wins: 0</h2>
+                <h2 class="losses">Losses: 0</h2>
+            </div>
+        </div>
+        <div class="row">
+            <button id="crystal-1" class="btn crystal">
+                <img src ="./assets/images/crystal-1.png" class="crystal">
+            </button>
+            <button id="crystal-2" class="btn crystal">
+                    <img src ="./assets/images/crystal-2.png" class="crystal">
+            </button>
+            <button id="crystal-3" class="btn crystal">
+                    <img src ="./assets/images/crystal-3.jpg" class="crystal">
+            </button>
+            <button id="crystal-4" class="btn crystal">
+                    <img src ="./assets/images/crystal-4.jpg" class="crystal">
+            </button>
+        </div>
+
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

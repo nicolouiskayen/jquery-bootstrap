@@ -1,3 +1,7 @@
 body {
     background-color: turquoise;
 }
+.crystal{
+    max-width:25%;
+    height: auto;
+}
